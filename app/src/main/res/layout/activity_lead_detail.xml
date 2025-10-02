@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".leadDetail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgxml3"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:gravity="left|center_vertical|center_horizontal|center|start"
+                android:paddingLeft="20dp">
+
+                <ImageView
+                    android:id="@+id/BackId"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:padding="5dp"
+                    android:src="@drawable/back" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/titleId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/gilroy_bold"
+                    android:maxLines="1"
+                    android:text="Lead Details"
+                    android:textColor="@color/whiteColor"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/extraLargeSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bgxml2"
+                    android:gravity="left|center_vertical|center_horizontal|center|start"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:gravity="left|center_vertical|center_horizontal|center|start">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/userprofile" />
+
+                        <TextView
+                            android:id="@+id/NameId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gilroy_bold"
+                            android:paddingLeft="15dp"
+                            android:text="Name"
+                            android:textColor="#000000"
+                            android:textFontWeight="500"
+                            android:textSize="@dimen/mediumSize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:gravity="right|center_vertical|center_horizontal|center">
+
+                        <TextView
+                            android:id="@+id/MobileId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gilroy_bold"
+                            android:gravity="right|center_vertical|center_horizontal|center|end"
+                            android:text="+91-000000000000"
+                            android:textColor="#000000"
+                            android:textFontWeight="500"
+                            android:textSize="@dimen/smallSize" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bgxml2"
+                    android:gravity="left|center_vertical|center_horizontal|center|start"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            app:cardBackgroundColor="@color/colorWhite"
+                            app:cardCornerRadius="8dp"
+                            app:cardUseCompatPadding="true">
+
+                            <ImageView
+                                android:id="@+id/LogoId"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/loading_squre" />
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/gilroy_bold"
+                                android:text="Item Code"
+                                android:textColor="@color/colorLightGray"
+                                android:textFontWeight="500"
+                                android:textSize="@dimen/extraSmallSize" />
+
+                            <TextView
+                                android:id="@+id/LeadId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/gilroy_bold"
+                                android:text="230023"
+                                android:textColor="#000000"
+                                android:textFontWeight="500"
+                                android:textSize="@dimen/mediumSize" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="@font/gilroy_bold"
+                                android:text="Amount"
+                                android:textColor="#000000"
+                                android:textFontWeight="500"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/amountId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/gilroy_bold"
+                                android:text="500"
+                                android:textColor="#000000"
+                                android:textFontWeight="500"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="@font/gilroy_bold"
+                                android:text="Lead of"
+                                android:textColor="#000000"
+                                android:textFontWeight="500"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/codeId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/gilroy_bold"
+                                android:text="500"
+                                android:textColor="#000000"
+                                android:textFontWeight="500"
+                                android:textSize="17sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="top|left|center_vertical|center_horizontal|center|start">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/gilroy_bold"
+                                android:text="Step 1 : "
+                                android:textColor="@color/greenLight"
+                                android:textFontWeight="500"
+                                android:textSize="@dimen/smallSize" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:paddingLeft="5dp">
+
+                                <TextView
+                                    android:id="@+id/step1Id"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/gilroy_bold"
+                                    android:text="Lead Added"
+                                    android:textColor="@color/black"
+                                    android:textFontWeight="500"
+                                    android:textSize="@dimen/mediumSize" />
+
+                                <TextView
+                                    android:id="@+id/dataId"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/gilroy_bold"
+                                    android:text="May 4, 2022"
+                                    android:textColor="@color/black"
+                                    android:textFontWeight="500"
+                                    android:textSize="@dimen/extraSmallSize" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:gravity="top|left|center_vertical|center_horizontal|center|start">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/gilroy_bold"
+                                android:text="Step 2 : "
+                                android:textColor="@color/greenLight"
+                                android:textFontWeight="500"
+                                android:textSize="@dimen/smallSize" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:paddingLeft="5dp">
+
+                                <EditText
+                                    android:id="@+id/statusId"
+                                    android:layout_width="150dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/gilroy_bold"
+                                    android:hint="Pending/Completed"
+                                    android:textColorHint="@color/black"
+                                    android:textColor="@color/black"
+                                    android:textFontWeight="500"
+                                    android:textSize="@dimen/mediumSize" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:background="#32ffffff"
+                                    android:padding="10dp">
+
+                                    <EditText
+                                        android:id="@+id/statusMsg"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/gilroy_bold"
+                                        android:hint="message about lead"
+                                        android:textColorHint="@color/black"
+                                        android:text="Just few more steps to complete the application."
+                                        android:textColor="@color/black"
+                                        android:textFontWeight="500"
+                                        android:textSize="@dimen/smallSize" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:id="@+id/SaveId"
+                                android:layout_width="230dp"
+                                android:layout_height="@dimen/buttonHeight"
+                                android:background="@drawable/bgxml4"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/compltText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:text="Save"
+                                    android:textColor="@color/blackColor"
+                                    android:textSize="@dimen/buttonText"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:id="@+id/addAmountId"
+                                android:layout_width="230dp"
+                                android:layout_height="@dimen/buttonHeight"
+                                android:background="@drawable/bgxml4"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:text="Add amount"
+                                    android:textColor="@color/blackColor"
+                                    android:textSize="@dimen/buttonText"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

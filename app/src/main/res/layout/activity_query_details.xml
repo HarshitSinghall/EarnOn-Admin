@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgxml3"
+    tools:context=".queryDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:fontFamily="@font/gilroy_bold"
+                android:text="MESSAGE"
+                android:textColor="@color/white"
+                android:textFontWeight="500"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/DescriptionId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:fontFamily="@font/gilroy_bold"
+                android:hint="REPLY"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textFontWeight="500"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/statusId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:fontFamily="@font/gilroy_bold"
+                android:hint="open/close"
+                android:text="open"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textFontWeight="500"
+                android:textSize="20sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/SaveId"
+                    android:layout_width="230dp"
+                    android:layout_height="@dimen/buttonHeight"
+                    android:background="@drawable/bgxml4"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/compltText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="Save"
+                        android:textColor="@color/blackColor"
+                        android:textSize="@dimen/buttonText"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

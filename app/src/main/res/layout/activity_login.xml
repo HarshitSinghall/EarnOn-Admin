@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".loginActivity"
+    android:background="@drawable/bgxml3"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/gilroy_bold"
+                    android:text="Welcome Back!!"
+                    android:textColor="@color/white"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/extraLargeSize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/gilroy_bold"
+                    android:text="Please login to continue"
+                    android:textColor="@color/colorLightGray"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/smallSize" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/inputHeight"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/bgxml2"
+                    android:gravity="left|center_vertical|center_horizontal|center|start"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/formIconSize"
+                        android:layout_height="@dimen/formIconSize"
+                        android:src="@drawable/phone" />
+
+                    <EditText
+                        android:id="@+id/mobileNoId"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:fontFamily="@font/gilroy_bold"
+                        android:hint="Mobile Number"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:paddingLeft="20dp"
+                        android:textColor="@color/whiteColor"
+                        android:textColorHint="@color/colorLightGray"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/inputText"/>
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/signInId"
+                    android:layout_width="170dp"
+                    android:layout_height="@dimen/buttonHeight"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/bgxml4"
+                    android:fontFamily="@font/gilroy_bold"
+                    android:text="LOG IN"
+                    android:textColor="@color/white"
+                    android:textFontWeight="300"
+                    android:textSize="@dimen/buttonText"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

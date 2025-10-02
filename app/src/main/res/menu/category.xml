@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/credit"
+        android:title="credit"/>
+
+    <item android:id="@+id/demat"
+        android:title="demat"/>
+
+    <item android:id="@+id/mini"
+        android:title="mini"/>
+
+    <item android:id="@+id/mutual"
+        android:title="mutual"/>
+
+    <item android:id="@+id/payLater"
+        android:title="pay"/>
+
+    <item android:id="@+id/saving"
+        android:title="saving"/>
+
+</menu>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.developers.EarnOn_Admin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EarnOnadmin">
+        <activity
+            android:name=".refferalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".deleteTask"
+            android:exported="false" />
+        <activity
+            android:name=".queryDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Query"
+            android:exported="false" />
+        <activity
+            android:name=".notificationDetail"
+            android:exported="false" />
+        <activity
+            android:name=".redeemDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Redeem"
+            android:exported="false" />
+        <activity
+            android:name=".addTask"
+            android:exported="false" />
+        <activity
+            android:name=".taskDetails"
+            android:exported="false" />
+        <activity
+            android:name=".signin"
+            android:exported="false" />
+        <activity
+            android:name=".leadDetail"
+            android:exported="false" />
+        <activity
+            android:name=".Leads"
+            android:exported="false" />
+        <activity
+            android:name=".Notifications"
+            android:exported="false" />
+        <activity
+            android:name=".otpVerification"
+            android:exported="false" />
+        <activity
+            android:name=".loginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".splashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
